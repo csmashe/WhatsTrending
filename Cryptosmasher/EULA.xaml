@@ -1,0 +1,30 @@
+﻿<Window x:Class="Cryptosmasher.EULA"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cryptosmasher"
+        mc:Ignorable="d"
+        Title="Read this!" Height="300" Width="393.846">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <RichTextBox Grid.ColumnSpan="2">
+            <FlowDocument>
+                <Paragraph FontSize="36">Greetings earthlings!</Paragraph>          
+                <Paragraph FontStyle="Italic" TextAlignment="Left" FontSize="14" Foreground="Gray">The colors and numbers are not meant to be used by them selfs as an indicator on what to trade, but as a first step on where to start analyzing. The maker of this program takes no responsibility in how you choose to use it.</Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1">
+            <Button Name="btnOk" Width="100" Click="btnOk_Click">Accept</Button>
+            <Button Name="btnCancel" Width="100" Click="btnCancel_Click">Decline</Button>  
+        </StackPanel>
+        
+    </Grid>
+</Window>
